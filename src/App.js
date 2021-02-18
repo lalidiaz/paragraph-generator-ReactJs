@@ -19,7 +19,7 @@ function App() {
 
   return (
     <section className="section-center">
-      <h3>Don't you think cats are amazing?</h3>
+      <h3 className="title">Don't you think cats are amazing?</h3>
       <form className="lorem-form" onSubmit={handleSubmit}>
         <label htmlFor="amount">paragraphs:</label>
         <input
