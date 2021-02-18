@@ -7,12 +7,19 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setText(data);
+    let amount = parseInt(count);
+    if (count <= 0) {
+      amount = 1;
+    }
+    if (count > 8) {
+      amount = 8;
+    }
+    setText(data.slice(0, amount));
   };
 
   return (
     <section className="section-center">
-      <h3>tired of boring lorem ipsum?</h3>
+      <h3>Don't you think cats are amazing?</h3>
       <form className="lorem-form" onSubmit={handleSubmit}>
         <label htmlFor="amount">paragraphs:</label>
         <input
